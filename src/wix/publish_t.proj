@@ -9,6 +9,7 @@
     <PublishX86>$(PublishRoot)WixToolset.Sdk\tools\net472\x86\</PublishX86>
     <PublishX64>$(PublishRoot)WixToolset.Sdk\tools\net472\x64\</PublishX64>
     <PublishARM64>$(PublishRoot)WixToolset.Sdk\tools\net472\arm64\</PublishARM64>
+    <PublishARM>$(PublishRoot)WixToolset.Sdk\tools\net45\arm\</PublishARM>
     <PublishDnc>$(PublishRoot)WixToolset.Sdk\tools\net6.0\</PublishDnc>
   </PropertyGroup>
 
@@ -22,6 +23,7 @@
     <ProjectReference Include="wix\wix.csproj" Properties="TargetFramework=net472;RuntimeIdentifier=win-x86;PublishDir=$(PublishX86)" Targets="Publish" />
     <ProjectReference Include="wix\wix.csproj" Properties="TargetFramework=net472;RuntimeIdentifier=win-x64;PublishDir=$(PublishX64)" Targets="Publish" />
     <ProjectReference Include="wix\wix.csproj" Properties="TargetFramework=net472;RuntimeIdentifier=win-arm64;PublishDir=$(PublishARM64)" Targets="Publish" />
+    <ProjectReference Include="wix\wix.csproj" Properties="TargetFramework=net45;RuntimeIdentifier=win-arm;PublishDir=$(PublishARM)" Targets="Publish" />
     <ProjectReference Include="wix\wix.csproj" Properties="TargetFramework=net6.0;UseAppHost=false;PublishDir=$(PublishDnc)" Targets="Publish" />
   </ItemGroup>
 
